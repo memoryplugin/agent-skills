@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "memoryplugin": {
+      "type": "http",
+      "url": "https://www.memoryplugin.com/api/mcp/mcp"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "memoryplugin",
+  "displayName": "MemoryPlugin",
+  "version": "1.0.0",
+  "description": "One memory. Every AI. Connects MemoryPlugin's memory server and teaches the agent to recall the user's long-term memory before assuming, and store durable facts before finishing.",
+  "author": {
+    "name": "MemoryPlugin",
+    "url": "https://www.memoryplugin.com"
+  },
+  "homepage": "https://www.memoryplugin.com",
+  "repository": "https://github.com/memoryplugin/agent-skills",
+  "license": "MIT",
+  "keywords": ["memory", "long-term-memory", "recall", "context", "mcp", "chatgpt", "gemini", "cross-tool"]
+}

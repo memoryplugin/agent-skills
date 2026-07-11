@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'MemoryPlugin is connected: the user has one long-term memory shared across their AI tools. Recall relevant memories before assuming user context, and store durable new facts when they emerge. The memoryplugin skill has the playbook.'"
+          }
+        ]
+      }
+    ]
+  }
+}

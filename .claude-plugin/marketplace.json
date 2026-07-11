@@ -1,0 +1,19 @@
+{
+  "name": "memoryplugin",
+  "owner": {
+    "name": "MemoryPlugin",
+    "email": "support@memoryplugin.com"
+  },
+  "metadata": {
+    "description": "Official MemoryPlugin plugin: one long-term memory for the user across every AI tool, recalled and kept current automatically.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "memoryplugin",
+      "source": "./",
+      "description": "One memory. Every AI. Connects MemoryPlugin's memory server and teaches the agent to recall the user's long-term memory before assuming, and store durable facts before finishing.",
+      "tags": ["memory", "long-term-memory", "recall", "context", "mcp"]
+    }
+  ]
+}
