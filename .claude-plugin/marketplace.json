@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Official MemoryPlugin plugin: one long-term memory for the user across every AI tool, recalled and kept current automatically.",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {

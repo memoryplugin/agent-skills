@@ -19,7 +19,7 @@ Tool names below are the bare names; your client may prefix them (for example `m
 
 | Tool | Use for |
 |---|---|
-| `recall_chat_history` | Search the user's imported past conversations across AI tools. Use when the user references an earlier discussion, wherever it happened. |
+| `recall_chat_history` | Search the user's imported past conversations across AI tools. Use when the user references an earlier discussion, wherever it happened. Supports a `queries` array for parallel multi-angle recall, per-query token budgets (roughly 300 to 1000), `before`/`after` date bounds, and a slower quality mode for hard queries. |
 | `chat_history_overview` | Summary of what chat history exists (sources, volume, time range). |
 | `get_conversation_summary` | Summary of one past conversation found via recall. |
 | `get_full_conversation` | Full transcript of one past conversation. Use sparingly, transcripts can be long. |
@@ -29,4 +29,4 @@ Tool names below are the bare names; your client may prefix them (for example `m
 
 - Recall: `search_memories` with concrete nouns; 1 or 2 calls, then work. Broad orientation: `list_buckets` then `list_bucket_categories`, then `list_category_memories` only where relevant.
 - Store: `list_buckets` (if not already known this session), then `store_memory` per atomic fact.
-- Cross-tool history: `recall_chat_history`, then `get_conversation_summary`, then `get_full_conversation` only if needed.
+- Cross-tool history: `recall_chat_history` (fan out with the `queries` array on multifaceted topics), then `get_conversation_summary` on promising sources, then `get_full_conversation` only if needed.
