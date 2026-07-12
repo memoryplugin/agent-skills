@@ -1,7 +1,7 @@
 {
   "name": "memoryplugin",
   "displayName": "MemoryPlugin",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "One memory. Every AI. Connects MemoryPlugin's memory server and teaches the agent to recall the user's long-term memory before assuming, and store durable facts before finishing.",
   "author": {
     "name": "MemoryPlugin",

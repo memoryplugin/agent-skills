@@ -23,10 +23,11 @@ Tool names below are the bare names; your client may prefix them (for example `m
 | `chat_history_overview` | Summary of what chat history exists (sources, volume, time range). |
 | `get_conversation_summary` | Summary of one past conversation found via recall. |
 | `get_full_conversation` | Full transcript of one past conversation. Use sparingly, transcripts can be long. |
+| `export_conversation` | Temporary download link (expires in 15 minutes, no login needed) for one past conversation as a JSON file. Use when the user wants to save a chat as a file; to read content, use `get_full_conversation` instead. |
 | `search_uploaded_files` | Search files the user uploaded to MemoryPlugin. |
 
 ## Calling patterns
 
 - Recall: `search_memories` with concrete nouns; 1 or 2 calls, then work. Broad orientation: `list_buckets` then `list_bucket_categories`, then `list_category_memories` only where relevant.
 - Store: `list_buckets` (if not already known this session), then `store_memory` per atomic fact.
-- Cross-tool history: `recall_chat_history` (fan out with the `queries` array on multifaceted topics), then `get_conversation_summary` on promising sources, then `get_full_conversation` only if needed.
+- Cross-tool history: `recall_chat_history` (fan out with the `queries` array on multifaceted topics), then `get_conversation_summary` on promising sources, then `get_full_conversation` only if needed. When the user wants a chat saved as a file, hand them the link from `export_conversation`.
