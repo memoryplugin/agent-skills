@@ -6,6 +6,8 @@ This repo teaches AI agents to actually use your long-term memory: recall what t
 
 Adding a memory MCP server to an agent is not enough. Left to themselves, agents answer "you know my preferences" from guesswork and reply "let me know if you want me to remember that" instead of remembering. This skill fixes both, with the habits of heavy MemoryPlugin users built in: targeted recall, atomic dated memories, topical buckets, snapshot memories for long-running work, and cross-tool chat history recall.
 
+Full overview, install matrix, and FAQ: [memoryplugin.com/agent-skill](https://www.memoryplugin.com/agent-skill).
+
 ## Install
 
 ### Claude Code (recommended: plugin, one install gets everything)
